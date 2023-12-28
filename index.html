@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<html lang="pl-PL">
+		<head><meta charset="utf-8">
+			<title>Information of server Minecraft</title>
+			
+			<meta name="description" content="Opis">
+			<meta name="keywords" content="slowo1, ...,slowon">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+			<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&amp;family=Lato&amp;family=Montserrat:wght@300;400&amp;family=Nunito+Sans:opsz@6..12&amp;family=Nunito:wght@600&amp;family=Outfit:wght@500&amp;family=Poppins&amp;family=Rethink+Sans&amp;display=swap" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+			<!--
+			<base href="img/"> 
+			<link rel="stylesheet" type="text/css" href="style.css"/>-->
+			<link rel="icon" type="image/png" id="favicon" href=""/>
+			
+			
+		</head>
+		
+		<body onload="startApp()">
+			
+			<div id="main" class="bg-dark container rounded border border-secondary row">
+				<h1 class="text-light" id="title">Enter Server</h1>
+				<div id="favicon_server" class="float-start float-sm-none float-md-none col-4 col-sm-12"> <img id="imgElem"  class="img-fluid text-start border border-secondary rounded"></img> </div>
+				<div id="information_of_server" class="col-8 col-sm-12">
+					IP:&nbsp;<span id="ip"></span><br>
+					PORT:&nbsp;<span id="port"></span><br>
+					Number of players:&nbsp;<span id="noplayers"></span><br>
+					Number of max players:&nbsp;<span id="nomplayers"></span><br>
+					Online:&nbsp;<span id="online"></span><br>
+					Version:&nbsp;<span id="version"></span><br><br>
+					<button type="button" onclick="startApp()" class="btn btn-secondary">Select a new server</button>
+				</div>
+			</div>
+			<script src="script.js"></script>
+		</body>
+		
+		
+		
+	</html>	
